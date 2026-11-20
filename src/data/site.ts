@@ -9,7 +9,7 @@ export const siteConfig = {
   email: "achmadihwan0404@gmail.com",
   github: "https://github.com/Achmadganzz-94",
   linkedin: "https://www.linkedin.com/in/achmadikwanulmushthofa/",
-  cv: "/Achmad-Ikwanul-Mushthofa-CV.pdf",
+  cv: "/CV_Achmad-Ikwanul-Mushthofa_Fullstack-Developer.pdf",
 };
 
 export const stats = [
@@ -160,46 +160,47 @@ export const certificates: Certificate[] = [
   title: "Responsive Web Design",
   issuer: "freeCodeCamp",
   year: "2026",
-  image: "/certificates/freecodecamp.png",
+  image: "/certificates/free.png",
   credentialUrl:
     "https://www.freecodecamp.org/certification/achmad-ikwanul-mushthofa/responsive-web-design-v9",
 },
 
   {
   id: "cert-2",
+  title: "Belajar Dasar Pemrograman Web",
+  issuer: "Dicoding",
+  year: "2026",
+  image: "/certificates/dicoding.png",
+  credentialUrl: "https://www.dicoding.com/certificates/RVZK0O59QZD5",
+},
+{
+  id: "cert-3",
   title: "Fundamental of Assistant Web Developer - Nasional",
   issuer: "Digital Talent Academy",
   year: "2026",
-  image: "/certificates/dtaweb.png",
-  credentialUrl: "https://drive.google.com/file/d/1pMeZ6xGkVy1y5qNLVwGwF-4phqX7WmM5/view?usp=sharing",
+  image: "/certificates/web.png",
+  credentialUrl:
+    "https://drive.google.com/file/d/1pMeZ6xGkVy1y5qNLVwGwF-4phqX7WmM5/view?usp=sharing",
 },
 
- {
-  id: "cert-3",
+{
+  id: "cert-4",
   title: "Konsep Pemrograman - Micro Skill",
   issuer: "Digital Talent Scholarship",
   year: "2026",
-  image: "/certificates/konsepprogram.png",
-  credentialUrl: "https://drive.google.com/file/d/1RY-VI9lxJtGB1OUm04GO6c4Tttg1Ndny/view?usp=sharing",
+  image: "/certificates/konsep.png",
+  credentialUrl:
+    "https://drive.google.com/file/d/1RY-VI9lxJtGB1OUm04GO6c4Tttg1Ndny/view?usp=sharing",
 },
 
-  {
-    id: "cert-4",
-    title: "Backend & API Development",
-    issuer: "Certificate Provider",
-    year: "2026",
-    image: "/certificates/certificate-4.svg",
-    credentialUrl: "#",
-  },
-
-  {
-    id: "cert-5",
-    title: "Professional Development",
-    issuer: "Certificate Provider",
-    year: "2026",
-    image: "/certificates/certificate-5.svg",
-    credentialUrl: "#",
-  },
+{
+  id: "cert-5",
+  title: "Introduction to Data Science and Its Applications Across Various Sectors - Micro Skill",
+  issuer: "Digital Talent Scholarship",
+  year: "2026",
+  image: "/certificates/sains.png",
+  credentialUrl: "https://drive.google.com/file/d/1APif2ZkBnCikKFyAPsWngwEIYLENAGaL/view?usp=sharing",
+},
 ];
 
 /*
@@ -218,25 +219,24 @@ export const certificateTranslations = {
       issuer: "FreeCodeCamp",
     },
 
-    "cert-2": {
-      title: "Fundamental of Assistant Web Developer - Nasional",
-      issuer: "Digital Talent Academy",
-    },
+"cert-2": {
+  title: "Basic Web Programming",
+  issuer: "Dicoding",
+},
+   "cert-3": {
+  title: "Fundamental of Assistant Web Developer - National",
+  issuer: "Digital Talent Academy",
+},
 
-    "cert-3": {
+ "cert-4": {
   title: "Programming Concepts - Micro Skill",
   issuer: "Digital Talent Scholarship",
 },
 
-    "cert-4": {
-      title: "Backend & API Development",
-      issuer: "Certificate Provider",
-    },
-
-    "cert-5": {
-      title: "Professional Development",
-      issuer: "Certificate Provider",
-    },
+"cert-5": {
+  title: "Data Science Applications",
+  issuer: "Digital Talent Scholarship",
+},
   },
 
   id: {
@@ -246,23 +246,23 @@ export const certificateTranslations = {
     },
 
 "cert-2": {
+  title: "Belajar Dasar Pemrograman Web",
+  issuer: "Dicoding",
+},
+
+   "cert-3": {
   title: "Fundamental of Assistant Web Developer - Nasional",
   issuer: "Digital Talent Academy",
 },
 
-    "cert-3": {
+"cert-4": {
   title: "Konsep Pemrograman - Micro Skill",
   issuer: "Digital Talent Scholarship",
 },
 
-    "cert-4": {
-      title: "Pengembangan Backend & API",
-      issuer: "Penyedia Sertifikat",
-    },
-
-    "cert-5": {
-      title: "Pengembangan Profesional",
-      issuer: "Penyedia Sertifikat",
-    },
+"cert-5": {
+  title: "Aplikasi Data Science",
+  issuer: "Digital Talent Scholarship",
+},
   },
 } as const;
