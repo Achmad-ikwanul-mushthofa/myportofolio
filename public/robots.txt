@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.achmadikwanul.my.id/sitemap.xml
