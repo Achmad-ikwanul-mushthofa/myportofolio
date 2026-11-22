@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://achmadikwanul.my.id/sitemap.xml
+Sitemap: https://www.achmadikwanul.my.id/sitemap.xml
