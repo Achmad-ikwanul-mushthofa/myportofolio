@@ -3,19 +3,20 @@
   <head>
     <meta charset="UTF-8" />
 
+    <!-- Viewport -->
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
 
-    <!-- SEO -->
+    <!-- Primary SEO -->
     <title>
-      Achmad Ikwanul Mushthofa — Full-Stack Developer Portfolio
+      Achmad Ikwanul Mushthofa | Full-Stack Developer
     </title>
 
     <meta
       name="description"
-      content="Achmad Ikwanul Mushthofa — Full-Stack Developer and Information Systems student specializing in React.js, React Native, Node.js, TypeScript, PostgreSQL, and modern web development."
+      content="Achmad Ikwanul Mushthofa is a Full-Stack Developer and Information Systems student specializing in React.js, React Native, TypeScript, Node.js, Express.js, PostgreSQL, Prisma, and REST API development."
     />
 
     <meta
@@ -25,10 +26,10 @@
 
     <meta
       name="robots"
-      content="index, follow"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
     />
 
-    <!-- Canonical -->
+    <!-- Canonical URL -->
     <link
       rel="canonical"
       href="https://www.achmadikwanul.my.id/"
@@ -40,7 +41,79 @@
       content="#020617"
     />
 
-    <!-- Open Graph -->
+    <meta
+      name="color-scheme"
+      content="dark"
+    />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="/favicon.png"
+    />
+
+    <!-- ====================================================== -->
+    <!-- PERSON STRUCTURED DATA -->
+    <!-- ====================================================== -->
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "@id": "https://www.achmadikwanul.my.id/#person",
+        "name": "Achmad Ikwanul Mushthofa",
+        "url": "https://www.achmadikwanul.my.id/",
+        "image": "https://www.achmadikwanul.my.id/profile.jpg",
+        "jobTitle": "Full-Stack Developer",
+        "description": "Full-Stack Developer and Information Systems student specializing in modern web development, REST APIs, and database-driven applications.",
+        "sameAs": [
+          "https://github.com/Achmad-ikwanul-mushthofa",
+          "https://www.linkedin.com/in/achmadikwanulmushthofa/"
+        ],
+        "knowsAbout": [
+          "Full-Stack Development",
+          "Web Development",
+          "React.js",
+          "React Native",
+          "TypeScript",
+          "JavaScript",
+          "Node.js",
+          "Express.js",
+          "REST API",
+          "PostgreSQL",
+          "MySQL",
+          "Prisma",
+          "Tailwind CSS",
+          "Git",
+          "GitHub"
+        ]
+      }
+    </script>
+
+    <!-- ====================================================== -->
+    <!-- WEBSITE STRUCTURED DATA -->
+    <!-- ====================================================== -->
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": "https://www.achmadikwanul.my.id/#website",
+        "url": "https://www.achmadikwanul.my.id/",
+        "name": "Achmad Ikwanul Mushthofa — Portfolio",
+        "description": "Official portfolio website of Achmad Ikwanul Mushthofa, Full-Stack Developer.",
+        "publisher": {
+          "@id": "https://www.achmadikwanul.my.id/#person"
+        },
+        "inLanguage": "en"
+      }
+    </script>
+
+    <!-- ====================================================== -->
+    <!-- OPEN GRAPH -->
+    <!-- ====================================================== -->
+
     <meta
       property="og:type"
       content="website"
@@ -48,12 +121,12 @@
 
     <meta
       property="og:title"
-      content="Achmad Ikwanul Mushthofa — Full-Stack Developer"
+      content="Achmad Ikwanul Mushthofa | Full-Stack Developer"
     />
 
     <meta
       property="og:description"
-      content="Portfolio of Achmad Ikwanul Mushthofa, a Full-Stack Developer and Information Systems student."
+      content="Official portfolio of Achmad Ikwanul Mushthofa, a Full-Stack Developer specializing in React.js, React Native, TypeScript, Node.js, Express.js, PostgreSQL, Prisma, and REST APIs."
     />
 
     <meta
@@ -66,7 +139,25 @@
       content="Achmad Ikwanul Mushthofa"
     />
 
-    <!-- Twitter / X -->
+    <meta
+      property="og:image"
+      content="https://www.achmadikwanul.my.id/og-image.png"
+    />
+
+    <meta
+      property="og:image:alt"
+      content="Achmad Ikwanul Mushthofa — Full-Stack Developer"
+    />
+
+    <meta
+      property="og:locale"
+      content="en_US"
+    />
+
+    <!-- ====================================================== -->
+    <!-- TWITTER / X -->
+    <!-- ====================================================== -->
+
     <meta
       name="twitter:card"
       content="summary_large_image"
@@ -74,19 +165,43 @@
 
     <meta
       name="twitter:title"
-      content="Achmad Ikwanul Mushthofa — Full-Stack Developer"
+      content="Achmad Ikwanul Mushthofa | Full-Stack Developer"
     />
 
     <meta
       name="twitter:description"
-      content="Portfolio of Achmad Ikwanul Mushthofa, a Full-Stack Developer and Information Systems student."
+      content="Portfolio of Achmad Ikwanul Mushthofa, Full-Stack Developer and Information Systems student."
+    />
+
+    <meta
+      name="twitter:image"
+      content="https://www.achmadikwanul.my.id/og-image.png"
+    />
+
+    <!-- ====================================================== -->
+    <!-- PERFORMANCE -->
+    <!-- ====================================================== -->
+
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
     />
     <script type="module" crossorigin src="/assets/index-ZAtDS4Om.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-wRXpyFlm.css">
   </head>
 
   <body>
-    <div id="root"></div>
+    <noscript>
+      This portfolio requires JavaScript to display the application.
+    </noscript>
 
+    <div id="root"></div>
+
   </body>
 </html>

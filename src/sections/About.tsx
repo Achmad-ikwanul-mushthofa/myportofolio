@@ -33,22 +33,156 @@ export function About({ language }: AboutProps) {
             data-aos="fade-right"
             className="relative mx-auto w-full max-w-[300px]"
           >
+            {/* OUTER RINGS */}
             <div className="about-ring absolute -inset-3 rounded-[1.8rem] border border-blue-500/20" />
 
             <div className="about-ring-slow absolute -inset-6 rounded-[1.8rem] border border-blue-500/10" />
 
-            <div className="glass relative overflow-hidden rounded-[1.6rem] p-2.5 shadow-2xl shadow-blue-950/30">
+            {/* PHOTO FRAME */}
+            <div
+              className="
+                glass
+                group
+                relative
+                overflow-hidden
+                rounded-[1.6rem]
+                p-2.5
+                shadow-2xl
+                shadow-blue-950/30
+                transition-all
+                duration-700
+                ease-out
+                hover:shadow-blue-950/40
+              "
+            >
+              {/* ORIGINAL GLOW */}
               <div className="about-image-glow absolute inset-0 rounded-[1.4rem]" />
 
-              <img
-                src="/images/profile.jpg"
-                alt={siteConfig.name}
-                className="about-photo relative z-10 aspect-[4/5] w-full object-cover object-top grayscale-[8%]"
-              />
+              {/* PHOTO WRAPPER */}
+              <div className="relative overflow-hidden rounded-[1.4rem]">
+                {/* FOTO UTAMA */}
+                <img
+                  src="/images/profile.jpg"
+                  alt={siteConfig.name}
+                  className="
+                    about-photo
+                    relative
+                    z-10
+                    aspect-[4/5]
+                    w-full
+                    object-cover
+                    object-top
+                    grayscale-[8%]
+                    transition-all
+                    duration-[900ms]
+                    ease-[cubic-bezier(0.22,1,0.36,1)]
+                    group-hover:scale-[1.025]
+                    group-hover:opacity-0
+                  "
+                />
 
-              <div className="pointer-events-none absolute inset-0 z-20 bg-gradient-to-tr from-blue-500/20 via-transparent to-transparent opacity-0 transition duration-700 hover:opacity-100" />
+                {/* FOTO SAAT HOVER */}
+                <img
+                  src="/images/achm.jpeg"
+                  alt={`${siteConfig.name} alternate`}
+                  className="
+                    absolute
+                    inset-0
+                    z-10
+                    h-full
+                    w-full
+                    object-cover
+                    object-top
+                    opacity-0
+                    scale-[1.025]
+                    transition-all
+                    duration-[900ms]
+                    ease-[cubic-bezier(0.22,1,0.36,1)]
+                    group-hover:scale-100
+                    group-hover:opacity-100
+                  "
+                />
+
+                {/* SUBTLE COLOR VEIL */}
+                <div
+                  className="
+                    pointer-events-none
+                    absolute
+                    inset-0
+                    z-20
+                    bg-gradient-to-br
+                    from-blue-500/[0.06]
+                    via-transparent
+                    to-purple-500/[0.08]
+                    opacity-0
+                    transition-opacity
+                    duration-700
+                    group-hover:opacity-100
+                  "
+                />
+
+                {/* PREMIUM LIGHT SWEEP */}
+                <div
+                  className="
+                    pointer-events-none
+                    absolute
+                    -inset-y-10
+                    -left-[120%]
+                    z-30
+                    w-[45%]
+                    rotate-[12deg]
+                    bg-gradient-to-r
+                    from-transparent
+                    via-white/[0.10]
+                    to-transparent
+                    blur-xl
+                    transition-all
+                    duration-[1100ms]
+                    ease-out
+                    group-hover:left-[140%]
+                  "
+                />
+
+                {/* SOFT INNER BORDER */}
+                <div
+                  className="
+                    pointer-events-none
+                    absolute
+                    inset-0
+                    z-40
+                    rounded-[1.4rem]
+                    ring-1
+                    ring-inset
+                    ring-white/[0.08]
+                    transition-all
+                    duration-700
+                    group-hover:ring-blue-300/[0.18]
+                  "
+                />
+              </div>
+
+              {/* VERY SUBTLE PURPLE ATMOSPHERE */}
+              <div
+                className="
+                  pointer-events-none
+                  absolute
+                  -bottom-20
+                  -left-20
+                  z-0
+                  h-40
+                  w-40
+                  rounded-full
+                  bg-purple-500/[0.06]
+                  blur-3xl
+                  opacity-0
+                  transition-opacity
+                  duration-700
+                  group-hover:opacity-100
+                "
+              />
             </div>
 
+            {/* LOCATION */}
             <div
               data-aos="fade-up"
               data-aos-delay="200"
@@ -58,7 +192,9 @@ export function About({ language }: AboutProps) {
                 {language === "en" ? "Based in" : "Berbasis di"}
               </p>
 
-              <p className="text-sm font-bold text-white">Jakarta, Indonesia</p>
+              <p className="text-sm font-bold text-white">
+                Jakarta, Indonesia
+              </p>
             </div>
           </div>
 
@@ -105,7 +241,9 @@ export function About({ language }: AboutProps) {
                   </div>
 
                   <div className="mt-1 text-xs text-slate-500">
-                    {language === "en" ? s.label : translateStatLabel(s.label)}
+                    {language === "en"
+                      ? s.label
+                      : translateStatLabel(s.label)}
                   </div>
                 </div>
               ))}
