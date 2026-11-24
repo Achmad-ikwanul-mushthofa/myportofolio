@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { FaCheckCircle } from "react-icons/fa";
 import { Container } from "../components/Container";
 import { SectionHeading } from "../components/SectionHeading";
@@ -60,47 +61,72 @@ export function About({ language }: AboutProps) {
 
               {/* PHOTO WRAPPER */}
               <div className="relative overflow-hidden rounded-[1.4rem]">
-                {/* FOTO UTAMA */}
-                <img
+
+                {/* FOTO 1 */}
+                <motion.img
                   src="/images/profile.jpg"
                   alt={siteConfig.name}
                   className="
                     about-photo
-                    relative
+                    absolute
+                    inset-0
                     z-10
                     aspect-[4/5]
                     w-full
                     object-cover
                     object-top
                     grayscale-[8%]
-                    transition-all
-                    duration-[900ms]
-                    ease-[cubic-bezier(0.22,1,0.36,1)]
-                    group-hover:scale-[1.025]
-                    group-hover:opacity-0
                   "
+                  animate={{
+                    opacity: [1, 1, 0, 0, 1],
+                    scale: [1, 1.015, 1.08, 1.08, 1],
+                    x: [0, 0, -12, -12, 0],
+                    filter: [
+                      "blur(0px)",
+                      "blur(0px)",
+                      "blur(7px)",
+                      "blur(7px)",
+                      "blur(0px)",
+                    ],
+                  }}
+                  transition={{
+                    duration: 6,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                    times: [0, 0.70, 0.78, 0.90, 1],
+                  }}
                 />
 
-                {/* FOTO SAAT HOVER */}
-                <img
+                {/* FOTO 2 */}
+                <motion.img
                   src="/images/achm.jpeg"
                   alt={`${siteConfig.name} alternate`}
                   className="
-                    absolute
-                    inset-0
+                    relative
                     z-10
-                    h-full
+                    aspect-[4/5]
                     w-full
                     object-cover
                     object-top
-                    opacity-0
-                    scale-[1.025]
-                    transition-all
-                    duration-[900ms]
-                    ease-[cubic-bezier(0.22,1,0.36,1)]
-                    group-hover:scale-100
-                    group-hover:opacity-100
                   "
+                  animate={{
+                    opacity: [0, 0, 1, 1, 0],
+                    scale: [1.08, 1.08, 1.015, 1, 1.08],
+                    x: [12, 12, 0, 0, 12],
+                    filter: [
+                      "blur(7px)",
+                      "blur(7px)",
+                      "blur(0px)",
+                      "blur(0px)",
+                      "blur(7px)",
+                    ],
+                  }}
+                  transition={{
+                    duration: 6,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                    times: [0, 0.70, 0.78, 0.90, 1],
+                  }}
                 />
 
                 {/* SUBTLE COLOR VEIL */}
@@ -114,15 +140,11 @@ export function About({ language }: AboutProps) {
                     from-blue-500/[0.06]
                     via-transparent
                     to-purple-500/[0.08]
-                    opacity-0
-                    transition-opacity
-                    duration-700
-                    group-hover:opacity-100
                   "
                 />
 
                 {/* PREMIUM LIGHT SWEEP */}
-                <div
+                <motion.div
                   className="
                     pointer-events-none
                     absolute
@@ -136,11 +158,16 @@ export function About({ language }: AboutProps) {
                     via-white/[0.10]
                     to-transparent
                     blur-xl
-                    transition-all
-                    duration-[1100ms]
-                    ease-out
-                    group-hover:left-[140%]
                   "
+                  animate={{
+                    left: ["-120%", "140%"],
+                  }}
+                  transition={{
+                    duration: 1.8,
+                    repeat: Infinity,
+                    repeatDelay: 4.2,
+                    ease: "easeInOut",
+                  }}
                 />
 
                 {/* SOFT INNER BORDER */}
